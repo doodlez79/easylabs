@@ -1,0 +1,24 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+.eslintcache
+
+# Dist
+dist
+lib
+temp
+
+# Dependency directories
+node_modules/
+
+# Tests artifacts
+allure-results
+coverage
+
+# misc
+.idea
+.DS_Store
+.eslintcache
+.stylelintcache
+.vscode

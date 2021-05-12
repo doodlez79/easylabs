@@ -1,0 +1,12 @@
+{
+  "name": "@easy-labs-int/shared",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -Rf ./dist && mkdir dist",
+    "build": "yarn clean && tsc",
+    "postinstall": "yarn build"
+  }
+}

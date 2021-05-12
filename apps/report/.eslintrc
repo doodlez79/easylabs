@@ -1,0 +1,8 @@
+{
+    "extends": "../../.eslintrc",
+    "parserOptions": {
+      // ссылка на tsconfig.json проекта
+      // включает правила, требующие информации о типах
+      "project": "./tsconfig.json"
+    }
+}

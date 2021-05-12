@@ -1,0 +1,74 @@
+{
+    "categories": {
+        "title": "Category Title",
+        "description": "Category Description",
+        "icon": "/Category-Icon.png",
+        "groups": [
+            {
+                "title": "Group Title",
+                "tests": [
+                    {
+                        "code": 1,
+                        "name": "Test Name",
+                        "description": "Test Description",
+                        "units": ["kg", "g"],
+                        "defaultUnit": "kg",
+                        "ranges": [
+                            {
+                                "sex": "F",
+                                "type": "ALL", // ALL, BELOW_OR_EQUAL, ABOVE_OR_EQUAL, BETWEEN
+
+                                // "type": "BELOW_OR_EQUAL",
+                                // "value": 18,
+
+                                // "type": "ABOVE_OR_EQUAL",
+                                // "value": 18,
+
+                                // "type": "BETWEEN",
+                                // "value": {
+                                //     "from": 18,
+                                //     "to": 40
+                                // },
+
+                                "tooLow": {
+                                    "critical": {
+                                        "value": 1.1,
+                                        "significance": "Range significance",
+                                        "treatment": "Range treatment"
+                                    },
+                                    "low": {
+                                        "value": 1.1,
+                                        "significance": "Range significance",
+                                        "treatment": "Range treatment"
+                                    },
+                                    "moderate": {
+                                        "value": 1.1,
+                                        "significance": "Range significance",
+                                        "treatment": "Range treatment"
+                                    }
+                                },
+                                "tooHigh": {
+                                    "critical": {
+                                        "value": 1.1,
+                                        "significance": "Range significance",
+                                        "treatment": "Range treatment"
+                                    },
+                                    "low": {
+                                        "value": 1.1,
+                                        "significance": "Range significance",
+                                        "treatment": "Range treatment"
+                                    },
+                                    "moderate": {
+                                        "value": 1.1,
+                                        "significance": "Range significance",
+                                        "treatment": "Range treatment"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

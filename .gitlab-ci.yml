@@ -1,0 +1,11 @@
+before_script:
+  - docker info
+
+build_image:
+  script:
+    - docker build -t easy-labs --build-arg BACKEND_PORT=3333 .
+    - docker kill $(docker ps | grep '3333->3333' | awk '{print $1}') || echo "Nothing to kill"
+    - docker run -p 3333:3333 -d easy-labs
+  only:
+    refs:
+      - develop
